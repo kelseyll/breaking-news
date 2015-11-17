@@ -18,33 +18,27 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     height: 100vh;
-    /*border: 10px solid rgba(0,0,0,0.2);*/
+    background-color: #000;
 }
 h1 {
-    text-shadow: 3px 2px #000;
+    text-shadow: 4px 4px #000;
     font-family: Helvetica Neue;
     font-size: 2em;
     letter-spacing: 2px;
     width: 100%;
     bottom: 0;
-    padding: 8px 16px;
+    padding: 8px 16px 8px 50px;
     font-weight: 600;
     color: #fff;
-    text-shadow: ;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e52d2d+0,ffffff+100 */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e52d2d+0,000000+100&amp;1+0,0.5+100 */
-    background: -moz-linear-gradient(top,  rgba(229,45,45,1) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(229,45,45,1) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(229,45,45,1) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e52d2d', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
-
-
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef2f2f+0,7db9e8+100&amp;0.9+0,0+70 */
+    background: -moz-linear-gradient(left,  rgba(239,47,47,0.9) 0%, rgba(159,144,176,0) 70%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(239,47,47,0.9) 0%,rgba(159,144,176,0) 70%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(239,47,47,0.9) 0%,rgba(159,144,176,0) 70%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ef2f2f', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
 }
 marquee {
-    border-top: #fff 1px solid;
     letter-spacing: 2px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: blue;
     width: 100%;
     font-size: 1.5em;
     padding: 8px 16px;
@@ -52,4 +46,19 @@ marquee {
     font-family: Helvetica;
     font-weight: lighter;
     text-transform: uppercase;
+    z-index: -99px
+}
+.gradient-left-cover {
+    color: rgba(0,0,0,0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 30%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+61&amp;1+0,0+35 */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(146,146,146,0) 35%, rgba(255,255,255,0) 61%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(146,146,146,0) 35%,rgba(255,255,255,0) 61%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(146,146,146,0) 35%,rgba(255,255,255,0) 61%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
 }
