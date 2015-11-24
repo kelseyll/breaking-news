@@ -15,19 +15,21 @@ body {
 section {
     background-size: 100%;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100vh;
     background-color: #000;
 }
 h1 {
-    text-shadow: 4px 4px #000;
+    text-shadow: 2px 2px #000;
     font-family: Helvetica Neue;
-    font-size: 2em;
-    letter-spacing: 2px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
     width: 100%;
     bottom: 0;
-    padding: 8px 16px 8px 50px;
+    padding: 8px 16px 8px 20px;
     font-weight: 600;
     color: #fff;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3236ff+0,d62626+100&amp;0+0,0.9+100 */
@@ -35,14 +37,17 @@ h1 {
     background: -webkit-linear-gradient(top,  rgba(50,54,255,0) 0%,rgba(214,38,38,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(50,54,255,0) 0%,rgba(214,38,38,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003236ff', endColorstr='#e6d62626',GradientType=0 ); /* IE6-9 */
-
 }
+span {
+    display: none;
+}
+
 marquee {
     text-shadow: 2px 2px #000;
     letter-spacing: 0.5px;
     background-color: blue;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 8px 16px;
     color: #fff;
     font-family: Helvetica;
@@ -56,7 +61,25 @@ background: -webkit-linear-gradient(top,  rgba(0,24,76,1) 0%,rgba(0,35,237,1) 39
 background: linear-gradient(to bottom,  rgba(0,24,76,1) 0%,rgba(0,35,237,1) 39%,rgba(0,35,237,1) 62%,rgba(0,24,76,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00184c', endColorstr='#00184c',GradientType=0 ); /* IE6-9 */
 }
+@media (min-width: 550px) {
+    h1 {
+        padding: 8px 16px 8px 50px;
+        text-shadow: 4px 4px #000;
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    marquee {
+        font-size: 1.5em;
+    }
+}
 
-
-
+@media (min-width: 1000px) {    
+    span {
+        text-shadow: none;
+        display: inline;
+        color: #000;
+        font-weight: lighter;
+        font-size: 0.5em;
+        letter-spacing: 1px;
+    }
 }
